@@ -9485,11 +9485,25 @@ input:checked + .popover__choice-label::after,
   }
 }
 
-@media screen and (min-width: 741px) {
+/* @media screen and (min-width: 741px) {
   .header__wrapper {
     padding: calc(27px - var(--reduce-header-padding) * 6px) 0;
   }
-}
+} */
+
+
+@media screen and (max-width: 1199px) {
+  .header__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+  }
+
+  .header__inline-navigation{
+    flex:0;
+  }
+
+ }
 
 @media screen and (min-width: 1000px) and (max-width: 1199px) {
   [dir="ltr"] .header__search-bar {
