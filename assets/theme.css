@@ -14,11 +14,7 @@
   }
 }
 
-@media screen and (min-width: 741px) {
-  .hidden-tablet-and-up {
-    display: none !important;
-  }
-}
+
 
 @media screen and (max-width: 999px) {
   .hidden-pocket {
@@ -14995,4 +14991,34 @@ shopify-payment-terms {
   .video-section--full.video-section--large {
     --video-height: 800px;
   }
+}
+
+@media screen and (min-width: 741px) {
+  .hidden-tablet-and-up {
+    display: none !important;
+  }
+
+  .slideshow__image-wrapper{
+    background-color: #c3e2dd;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .slideshow__image-wrapper::before{
+    display: none;
+  }
+  
+.slideshow__image {
+  width: 60%;
+  height: 100%;
+  transform: translate(33%);
+}
+
+.slideshow__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 20% !important;
+     object-position: 50% 20% !important;
+}
+
 }
