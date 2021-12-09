@@ -2248,6 +2248,7 @@ p + .button-group,
  */
 
 .tap-area {
+  display: none;
   position: relative;
 }
 
