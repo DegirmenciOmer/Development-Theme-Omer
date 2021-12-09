@@ -6675,6 +6675,10 @@ input:checked + .popover__choice-label::after,
     margin-right: -18px;
   }
 
+  .announcement-bar__message {
+    font-size: 1.1em !important;
+  }
+
   .mobile-toolbar__item--filters.has-filters .mobile-toolbar__item-label::after {
     position: absolute;
     content: '';
@@ -6977,13 +6981,17 @@ input:checked + .popover__choice-label::after,
     border-right: 1px solid rgb(var(--border-color));
   }
 }
+
+.section-announcement-bar{
+  background: #501027;
+
+}
 .announcement-bar {
   display: flex;
   justify-content: center;
   align-items: center;
   padding-left: 20px;
   padding-right: 20px;
-  background: rgb(var(--section-background));
 }
 
 .announcement-bar--multiple {
@@ -6993,6 +7001,7 @@ input:checked + .popover__choice-label::after,
 .announcement-bar__list {
   padding-left: 10px;
   padding-right: 10px;
+  margin: auto;
 }
 
 .announcement-bar__item {
@@ -7005,9 +7014,10 @@ input:checked + .popover__choice-label::after,
 }
 
 .announcement-bar__message {
-  padding-top: 15px;
-  padding-bottom: 15px;
   text-align: center;
+  color: #fff;
+  font-size: 1.5em;
+  padding: 5px 0;
 }
 
 [dir="ltr"] .announcement-bar__message .link {
