@@ -9634,10 +9634,11 @@ input:checked + .popover__choice-label::after,
 
 .header__linklist-item {
   flex-shrink: 0;
+  font-size: 1.3em;
 }
 
 [dir="ltr"] .header__linklist-item:not(:last-child) {
-  margin-right: 32px;
+  margin-right: 20px;
 }
 
 [dir="rtl"] .header__linklist-item:not(:last-child) {
