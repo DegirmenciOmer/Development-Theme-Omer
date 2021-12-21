@@ -520,19 +520,6 @@
         "button_background": "rgba(0,0,0,0)",
         "button_text_color": "rgba(0,0,0,0)"
       }
-    },
-    "1640088715f49dd74e": {
-      "type": "video",
-      "settings": {
-        "subheading": "",
-        "title": "",
-        "video_url": "https:\/\/www.youtube.com\/watch?v=T0n2DZIaPxw",
-        "background_type": "boxed",
-        "video_size": "small",
-        "autoplay": true,
-        "background": "rgba(0,0,0,0)",
-        "text_color": "rgba(0,0,0,0)"
-      }
     }
   },
   "order": [
@@ -548,7 +535,6 @@
     "timeline",
     "featured-product",
     "text-with-icons",
-    "newsletter",
-    "1640088715f49dd74e"
+    "newsletter"
   ]
 }
