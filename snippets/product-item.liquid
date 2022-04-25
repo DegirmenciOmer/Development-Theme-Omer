@@ -149,7 +149,7 @@
               {%- if settings.currency_code_enabled -%}
                 {{- currprd.price | money_with_currency -}}
               {%- else -%}
-                {{- currprd.price | money -}}
+                {{- currprd.sku | money -}}
               {%- endif -%}
             </span>
 
