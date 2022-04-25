@@ -145,9 +145,9 @@
               <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
 
               {%- if settings.currency_code_enabled -%}
-                {{- product.price | money_with_currency -}}{{- product.title -}}
+                {{- product.price | money_with_currency -}}
               {%- else -%}
-                {{- product.price | money -}}
+                {{- product.price | money -}}{{- product.title -}}
               {%- endif -%}
             </span>
 
