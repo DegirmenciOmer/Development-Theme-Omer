@@ -147,7 +147,7 @@
               {%- if settings.currency_code_enabled -%}
                 {{- product.price | money_with_currency -}}
               {%- else -%}
-                {{- product.price | money -}}{{- product.title -}}
+                {{- product.price | money -}}
               {%- endif -%}
             </span>
 
