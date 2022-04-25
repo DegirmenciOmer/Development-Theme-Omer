@@ -1,3 +1,4 @@
+{% assign currprd = product %}
 {%- assign color_label_list = 'general.label.color' | t | replace: ', ', ',' | downcase | split: ',' -%}
 {%- assign color_white_label = 'general.label.white' | t | downcase -%}
 
@@ -6,6 +7,7 @@
 {%- else -%}
   {%- assign product_url_contains_query = false -%}
 {%- endif -%}
+
 
 <product-item class="product-item {% unless product.available %}product-item--sold-out{% endunless %}" {% if reveal %}reveal{% endif %}>
   {%- capture product_labels -%}
@@ -145,9 +147,9 @@
               <span class="visually-hidden">{{ 'product.general.sale_price' | t }}</span>
 
               {%- if settings.currency_code_enabled -%}
-                {{- product.price | money_with_currency -}}
+                {{- currprd.price | money_with_currency -}}
               {%- else -%}
-                {{- product.price | money -}}
+                {{- currprd.price | money -}}
               {%- endif -%}
             </span>
 
